@@ -1,0 +1,34 @@
+4.Sheela has three things in her bag.She wants to compute the area of 3 things but 3 things are in different shapes .
+The three things are in a square shape,rectangular shape,and circula shape respectively.
+Write a program to help Sheela to calculate the area of different shapes.
+Input format:
+First output: side of a square in integer.
+second input:length of a rectangle in integer.
+Third input:breadth of a rectangle in integer.
+fourth input:radius of a circle in double.
+
+import java.util.*;
+class Area{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the area of Square:");
+        int side = scan.nextInt();
+        System.out.println("Enter the length of Rectangle:");
+        int length = scan.nextInt();
+        System.out.println("Enter the breadth of Rectangle:");
+        int breadth = scan.nextInt();
+        System.out.println("Radius of circle:");
+        double radius = scan.nextDouble();
+
+        int area_square = side*side;
+        int area_lb = length*breadth;
+        double area_circle = 3.14*(radius*radius);
+        {
+
+        System.out.println(area_square);
+        System.out.println(area_lb);
+        System.out.println(area_circle);
+                       }
+                     }
+                }
+            
