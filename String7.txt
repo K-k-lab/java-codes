@@ -1,0 +1,24 @@
+Anagram program.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str1=sc.nextLine();//listen
+        String str2=sc.nextLine();//silent
+        if(str1.length()!=str2.length()){
+            System.out.println("not a anagram");
+        }
+        char[] ch1=str1.toCharArray();
+        char[] ch2=str2.toCharArray();
+        
+        Arrays.sort(ch1);
+        Arrays.sort(ch2);
+        System.out.println(Arrays.equals(ch1,ch2));
+        if(Arrays.equals(ch1,ch2)){
+            System.out.println("Anagram");
+        }else{
+            System.out.println("Not a Anagram");
+        }
+    }
+}
