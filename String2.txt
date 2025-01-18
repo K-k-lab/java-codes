@@ -1,0 +1,18 @@
+Write a program to reverse each word in a given String.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();//hello world
+        String[] s1=str.split(" ");//hello 
+        String rev="";
+        for(String i:s1){//hello
+        for(int j=i.length()-1;j>=0;j--){
+            rev+=i.charAt(j);
+        }
+        rev+=" ";
+        }
+        System.out.print(rev);
+    }
+}
