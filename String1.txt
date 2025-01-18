@@ -1,0 +1,163 @@
+Reverse a string.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();//hello;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                String result="";
+        for(int i=str.length()-1;i>=0;i--){
+            result+=str.charAt(i);
+        }
+        System.out.print(result);
+    }
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ==================================================                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Reverse a string without space.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();//hello;
+        String result="";
+        String rem=str.replace(" ","");  
+        for(int i=rem.length()-1;i>=0;i--){
+        result+=rem.charAt(i);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+        System.out.print(result);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           String result="";
+             }
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 =============================================================
+Write a program to reverse each word in a given String.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();//hello world
+        String[] s1=str.split(" ");//hello 
+        String rev="";
+        for(String i:s1){//hello
+        for(int j=i.length()-1;j>=0;j--){
+            rev+=i.charAt(j);
+        }
+        rev+=" ";
+        }
+        System.out.print(rev);
+    }
+}
+============================================================= 
+Check if a string is palindrome or not.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();//hello world
+        String result="";
+        String temp=str;
+        for(int i=str.length()-1;i>=0;i--){
+            result+=str.charAt(i);
+        }
+        System.out.println(result);
+        if(result.equals(temp)){
+            System.out.println("palindrome");
+        }else{
+            System.out.println("not a palindrome");
+        }
+    }
+}
+=========================================================== 
+Count occurence of a character in Strings.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();//hello world
+        char target=sc.next().charAt(0);//l
+        char ch[] = str.toCharArray();
+        int count=0;
+        for(int i=0;i<ch.length;i++){
+            if(ch[i]==target){
+                count++;
+            }
+        }
+        System.out.println("count:"+count);
+    }
+}
+==============================================================
+Longest word in the String.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();//hello world
+        String[] str1=str.split(" ");
+        String longest="";
+        for(String i:str1){
+            if(i.length()>=longest.length()){
+                longest=i;
+            }
+        }
+        System.out.println("longest:"+longest);
+    }
+}
+======================================================
+Count the number of characters in a String.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        char[] ch=str.toCharArray();
+        String res="";
+        int count=0;
+        
+        for(int i=0;i<ch.length;i++){
+            res+=ch;
+            count++;
+        }
+        System.out.println("count:"+count);
+    }
+}
+========================================================
+Remove duplicates from a String.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();//programming
+        char[] ch=str.toCharArray();
+        String res="";
+            for(char j:ch){
+                if(res.indexOf(j)==-1){//-1 represents skip
+                    res+=j;
+                    
+                }
+            }
+        System.out.println(res);
+    }
+}
+=========================================================
+Print and count the duplicates in a string.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();//programming
+        String res="";
+        int count=0;
+            for(int i=0;i<str.length()-1;i++){
+                char ch=str.charAt(i);
+               if(str.indexOf(ch)!=str.lastIndexOf(ch)&&res.indexOf(ch)==-1){
+                   res+=ch;
+                   count++;
+               } 
+            }
+        System.out.println(res);
+        System.out.println(count);
+    }
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+       
