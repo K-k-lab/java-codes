@@ -1,0 +1,17 @@
+Longest word in the String.
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();//hello world
+        String[] str1=str.split(" ");
+        String longest="";
+        for(String i:str1){
+            if(i.length()>=longest.length()){
+                longest=i;
+            }
+        }
+        System.out.println("longest:"+longest);
+    }
+}
